@@ -5,4 +5,4 @@ All the scripts here either are self explanatory, or can't be explained.
 
 > "Move fast and make things weird"
 
-The purpose of this repo is to practice by putting into practice, rather than learning to forget.
+The purpose of this repo is to practice by putting into practice.
