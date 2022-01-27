@@ -4,18 +4,9 @@
 # per standard serving, rather than volume
 # given in mg
 
-
-drip_coffee = 0
-black_tea = 45
-green_tea = 30
-matcha = 0
-espresso = 75
-can_cola = 35
-bottle_cola = 0
-energy_drink = 300
+drinks = [drip_coffee : 00,black_tea : 45,green_tea : 30,matcha : 00,espresso : 75,can_cola : 35,bottle_cola : 00,energy_drink : 300,]
 
 valid_unit = 'no'
-
 drink = input('What did you drink?')
 
 
