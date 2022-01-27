@@ -28,4 +28,13 @@ if yummy[0] == 'y':
 sheep_points += int(yay.count('y'))
 sheep_points += int(neigh.count('n'))
 
-print('Your final score is ' + str(sheep_points))
+if sheep_points >= 8 :
+    print('You definitely have a sheep!')
+elif sheep_points <=4 : 
+    print('You don\'t have a sheep!')
+    input('So...')
+    input('What do you have??')
+else :
+    print('You might have a sheep!')
+    
+print('Your final sheep score is ' + str(sheep_points) + ' sheep points!')
