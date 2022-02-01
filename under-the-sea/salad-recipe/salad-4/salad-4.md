@@ -22,19 +22,34 @@ graph TD
     O[Balsamic]
     P[Olive oil]
     Q[Olives]
+    S[Sesame seeds]
+    T[Tahina]
 
+
+    subgraph Veggies + Proteins
     A  --> D & E & Q
+    Q & D & E -->  F & H
     D & E --> Q
     D --> E
-    Q & D & E -->  F & H
+    end
+    subgraph Spices
+    A & Q & D & E & F & H --> I
+    I --> J & K & L & S
+    J & K & S-->  L
     F --> H
-    F & H --> I
-    I ---> J & K & M & L 
-    J & K -->  L
-    J --> K
-    J & K & L ---> M & N
-    M ---> N
-    I & J & K & L & M & N --> R & O --> P & B[Mix well] 
-    P --> B
+    S --> K & J
+
+    end
+    subgraph Herbs
+    I & J & K & L & S --> M & N
+    M --> N
+    end
+    subgraph Dressings
+    I & J & K & L & M & N -->
+    R & O -->
+    P & T & B[Mix well]
+    P & T--> B
+    end
     B --> C[Enjoy!]
-```
+
+    ```
