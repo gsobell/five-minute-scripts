@@ -4,7 +4,7 @@
 
 import time
 
-fine = 'nope' # maybe nice cup of tea will help?
+fine = 'nope' # maybe a nice cup of tea will help?
 
 print('To approximate the desired gauge, knit a square swatch the same stich pattern as used in the project.\n')
 print('For accurate measurement, the swatch should be a square of at least 4 inches, but larger is preffered.\n')
@@ -12,10 +12,10 @@ print('When complete, the number of rows should be the same as the number of sti
 time.sleep(2)
 
 while fine == 'nope' :
-    width   = input('What is the width of your swatch, in inches? \n(measure the top or bottom) ')
-    length  = input('\nWhat is the length of your swatch, in inches? \n(measure the sides) ')
+    width = input('What is the width of your swatch, in inches? \n(measure the top or bottom) ')
+    length = input('\nWhat is the length of your swatch, in inches? \n(measure the sides) ')
     stitches = input('\nHow many stitches per row did you knit? ')
-    rows    = input('\nHow many rows did you knit? ')
+    rows = input('\nHow many rows did you knit? ')
     fine = 'yep'
 
     swatch_strings = [width, length, stitches, rows]
